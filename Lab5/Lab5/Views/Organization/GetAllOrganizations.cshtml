@@ -1,0 +1,25 @@
+﻿<body>
+    <div>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td>>Name</td>
+            <td>DirectorPIB</td>
+            <td>DeputyDirectorPIB</td>
+            <td>DepartmentId</td>
+        </tr>
+        @foreach (var value in Model)
+        {
+            <tr>
+              <td>@value.Id</td>
+              <td>@value.Name</td>
+              <td>@value.DirectorPIB</td>
+              <td>@value.DeputyDirectorPIB</td>
+              <td>@value.DepartmentId</td>
+            </tr>
+        }
+    </table>
+    </div>
+</body>
+
+

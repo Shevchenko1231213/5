@@ -1,0 +1,30 @@
+﻿<body>
+<div>
+    <table>
+        <tr>
+            <td>GetAllDepartments</td>
+            <td>AddDepartment</td>
+        </tr>
+        <tr>
+             <td>
+                  <form action="@Url.Action("GetAllDepartments", "Department")" method="get">
+                  <input type="hidden"/>
+                  <button type="submit">GetAllDepartments</button>
+                  </form>
+             </td>
+             <td>
+                  <form action="@Url.Action("AddDepartment", "Department")" method="get">
+                  <input type="hidden" name="Id"/>
+                  <button type="submit">AddDepartment</button>
+                  </form>
+             </td>
+             <td>
+                  <form action="@Url.Action("GetByName", "Department")" method="get">
+                  <input type="hidden" name="Id"/>
+                  <button type="submit">GetById</button>
+                  </form>
+             </td>
+        </tr>
+    </table>
+</div>
+</body>
